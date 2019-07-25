@@ -1,0 +1,72 @@
+<div class="content">
+	<div class="login">
+		<div class="login-esquerda">
+			<div class="login-esquerda-imagem">
+				<img id="cadun" src="./assets/images/foto_cadun.png">
+			</div>
+			<div class="login-esquerda-texto">
+				Suporte operacional da CAIXA: <br> 
+				3004 1104 (Capitais e regiões metropolitanas) <br> 
+				0800 726 0104 (demais regiões).
+			</div>
+		</div>
+		<div class="login-direita">
+			<div>
+				<a href=""><div class="login-direita-logo"></div></a>
+			</div>
+			<div class="login-direita-header">
+				<div class="login-direita-header-wrapper"><strong>Login Caixa</strong></div>
+				<div class="login-direita-header-txt">CADASTRO ÚNICO PARA PROGRAMAS SOCIAIS <br> DO GOVERNO FEDERAL </div>
+			</div>
+			<form [formGroup]="form" (ngSubmit)="onSubmit()" class="text-center border border-light p-5 form">
+				<div class="form-group row">
+					<div class="input-group col-sm-12">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</span>
+						</div>
+						<input type="text" class="form-control input-caixa" id="inputUsuario" formControlName="usuario" placeholder="CPF">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="input-group col-sm-12">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fa fa-key" aria-hidden="true"></i>
+							</span>
+						</div>
+						<input type="password" class="form-control input-caixa" id="inputPassword" formControlName="senha" placeholder="Senha">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="input-group col-sm-12">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</span>
+						</div>
+						<input type="email" class="form-control input-caixa" id="inputEmail" formControlName="email" placeholder="E-mail">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="input-group col-sm-12">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">
+								<i class="fa fa-unlock" aria-hidden="true"></i>
+							</span>
+						</div>
+						<input type="number" max="999999" class="form-control input-caixa" id="inputCodigo" formControlName="codigo" placeholder="Código">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-12">
+						<button class="btn btn-info btn-lg btn-caixa btn-block" [disabled]="!form.valid">Iniciar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</div>
+<div [ngClass]="{'loading': loading}"></div>

@@ -1,0 +1,168 @@
+.form {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    border: none !important;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    background: #0250c5;
+    background: linear-gradient(bottom,#00b5e5,#005ca9);
+    background: -moz-linear-gradient(bottom,#00b5e5,#005ca9);
+    background: -o-linear-gradient(bottom,#00b5e5,#005ca9);
+    background: -webkit-linear-gradient(bottom,#00b5e5,#005ca9);
+    position: relative;
+    z-index: 1;
+    top: 50%;
+}
+
+.login {
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+}
+
+.login-esquerda-imagem {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    vertical-align: middle;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-esquerda-texto {
+    font-family: Futura;
+    color: #000;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-style: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.login-direita {
+    width: 450px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.login-direita-logo {
+    background-image: url('../../../assets/images/images-caixa.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.login-direita-header-wrapper {
+  background-position: center;
+  font-size: 18px;
+  font-family: Futura;
+  color: #1366a8;
+  margin: auto;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-direita-header-txt {
+  font-family: Futura;
+  color: #005ca9;
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-style: bold;
+  text-align: center;
+}
+
+.login-direita-header {
+    color: #fff;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.input-group-text {
+    font-family: Futura;
+    font-size: 22px;
+    line-height: 2.2;
+    color: #d0e0e3;
+    display: block;
+    width: 100%;
+    background: #eff5f6!important;
+    border-radius: 3px;
+    padding: 1px 2px 0 15px;
+    border: none;
+}
+
+.input-caixa {
+    font-family: Futura;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #48586c;
+    display: block;
+    background: #eff5f6!important;
+    height: 50px;
+    border-radius: 3px;
+    padding: 0 15px 0 15px;
+    border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #acadb8 !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #acadb8 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #acadb8 !important;
+}
+
+.btn-caixa {
+    background: #005ca9;
+    border-color: #005ca9;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    height: 60px;
+} 
+
+.btn-exportacao {
+    font-size: 13px;
+}
+
+.button-top {
+    padding-top: 5px;
+}
+
+.button-bottom {
+    padding-top: 5px;
+}
+
+.padding-left-25 {
+    padding-left: 25px;
+}
